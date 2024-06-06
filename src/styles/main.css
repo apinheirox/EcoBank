@@ -5,17 +5,19 @@
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
 header{
     background-color: #0C4B54;
     color: white;
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 80px;
 }
 
 header .container{
-    width: 1200px;
+    width: 1150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -31,6 +33,7 @@ header nav ul{
 header nav ul a{
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 header button:last-child{
     background-color: #E9F549;
@@ -40,6 +43,7 @@ header button:last-child{
     border: none;
     cursor: pointer;
     color: #0C4B54;
+    font-weight: 600;
 }
 header button{
     background-color: #ffffff00;
@@ -49,4 +53,63 @@ header button{
     border: 1px solid #ffffff;
     cursor: pointer;
     color: #ffffff;
+    font-weight: 600;
+}
+#home{
+     background-color: #0C4B54;
+}
+#home .container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#home .container-esq span{
+    color: #E9F549;
+}
+#home .container-esq h1{
+    color: #ffffff;
+    font-size: 55px;
+}
+#home .container-esq p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#home .container-esq button:last-child{
+    background-color: #ffffff00;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+}
+#home .container-esq button{
+    background-color: #E9F549;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: #0C4B54;
+    font-weight: 600;
+}
+#home .container-dir .home-img {
+    max-width: 460px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+#home .simbolo {
+    position: absolute;
+    z-index: 0;
+    width: 580px;
+    top: 15%;
+    left: 60%;
+    
 }
