@@ -111,5 +111,39 @@ header button{
     width: 580px;
     top: 15%;
     left: 60%;
-    
+}
+
+#celular .container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#celular .container-esq img {
+    max-width: 460px;
+    margin-top: 50px;
+    left: -20%;
+    position: relative;
+    z-index: 1;
+}
+
+#celular .simbolo {
+    position: absolute;
+    z-index: 0;
+    width: 580px;
+    top: 110%;
+    left: -10%;
+}
+
+#celular .container-dir h1{
+    color: #0C4B54;
+    font-size: 45px;
+}
+#home .container-esq p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
