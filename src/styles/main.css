@@ -117,6 +117,8 @@ header button{
     align-items: center;
     flex-direction: row;
     margin-bottom: 50px;
+    background-color: #ffffff;
+    position: relative;
 }
 #celular .container{
     width: 1000px;
@@ -198,7 +200,7 @@ header button{
 
 #about{
     position: relative;
-    padding: 100px 0;
+    padding: 130px 0;
     background-color: #0C4B54;
 }
 #about .container{
@@ -256,4 +258,218 @@ header button{
     color: #0C4B54;
     font-size: 19px;
     font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    #home .container {
+        width: 90%;
+    }
+    #celular .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    #home .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .container-esq{
+        margin: 100px auto;
+    }
+    #home .container-esq h1 {
+        font-size: 45px;
+    }
+
+    #home .container-esq p {
+        font-size: 16px;
+    }
+
+    #home .container-dir .home-img {
+        max-width: 400px;
+        margin-top: 0;
+    }
+
+    #home .simbolo {
+        width: 500px;
+        top: 50%;
+        left: 45%;
+    }
+    #celular {
+        flex-direction: column;
+    }
+
+    #celular .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #celular .container-esq img {
+        max-width: 400px;
+        margin-top: 30px;
+        left: 0;
+    }
+
+    #celular .simbolo {
+        width: 500px;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #celular .container-dir h1 {
+        font-size: 35px;
+    }
+
+    #celular .container-dir p {
+        font-size: 16px;
+    }
+
+    #celular .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #celular .card-1,
+    #celular .card-2 {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #home .container {
+        width: 90%;
+        padding: 0 25px;
+    }
+    #home .container-esq{
+        margin: 100px auto;
+    }
+    #home .container-esq h1 {
+        font-size: 35px;
+    }
+
+    #home .container-esq p {
+        font-size: 14px;
+    }
+
+    #home .container-dir .home-img {
+        max-width: 350px;
+    }
+
+    #home .simbolo {
+        width: 400px;
+        top: 55%;
+        left: 45%;
+    }
+    #celular .container-dir{
+        display: block;
+        align-items: left;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    #celular .container {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    #celular .container-esq img {
+        max-width: 350px;
+    }
+
+    #celular .simbolo {
+        width: 400px;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #celular .container-dir h1 {
+        font-size: 30px;
+    }
+
+    #celular .container-dir p {
+        font-size: 14px;
+    }
+
+    #celular .cards h3 {
+        font-size: 18px;
+    }
+
+    #celular .cards p {
+        font-size: 15px;
+    }
+
+    #celular .card-1,
+    #celular .card-2 {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    #home .container-esq h1 {
+        font-size: 28px;
+    }
+
+    #home .container-esq p {
+        font-size: 12px;
+    }
+
+    #home .container-esq button,
+    #home .container-esq button:last-child {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    #home .container-dir .home-img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #home .simbolo {
+        width: 350px;
+        top: 50%;
+        left: 60%;
+    }
+    #celular .container-esq img {
+        max-width: 300px;
+    }
+    #celular .container-dir{
+        margin: 0 auto;
+        justify-content: center;
+        padding: 30px;
+    }
+    #celular .simbolo {
+        width: 250px;
+        top: 55%;
+        left: 25%;
+        transform: translateX(-50%);
+    }
+
+    #celular .container-dir h1 {
+        font-size: 25px;
+    }
+
+    #celular .container-dir p {
+        font-size: 12px;
+    }
+
+    #celular .cards h3 {
+        font-size: 16px;
+    }
+
+    #celular .cards p {
+        font-size: 14px;
+    }
+
+    #celular .card-1,
+    #celular .card-2 {
+        width: 100%;
+        max-width: 350px;
+    }
 }
