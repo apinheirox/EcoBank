@@ -141,7 +141,7 @@ header button{
     position: absolute;
     z-index: 0;
     width: 650px;
-    top: 104%;
+    top: 5%;
     left: -6%;
 }
 #celular .container-esq{
@@ -267,6 +267,9 @@ header button{
     #celular .container {
         width: 90%;
     }
+    #about .container {
+        width: 90%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -335,6 +338,36 @@ header button{
     #celular .card-2 {
         width: 100%;
         max-width: 300px;
+    }
+    #about .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .text {
+        width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #about h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #about .cards .card-top {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #about .cards .card {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+        padding: 20px;
+        font-size: 17px;
     }
 }
 
@@ -408,6 +441,39 @@ header button{
         width: 100%;
         max-width: 280px;
     }
+    #about {
+        margin-top: -50px;
+        padding: 80px 0;
+    }
+
+    #about .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    #about .text {
+        width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #about h1 {
+        font-size: 28px;
+    }
+
+    #about .cards .card-top {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #about .cards .card {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -471,5 +537,32 @@ header button{
     #celular .card-2 {
         width: 100%;
         max-width: 350px;
+    }
+    #about {
+        padding: 80px 0;
+    }
+
+    #about .text {
+        width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #about h1 {
+        font-size: 24px;
+    }
+
+    #about .cards .card-top {
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+        margin-bottom: -6px;
+    }
+
+    #about .cards .card {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
     }
 }
