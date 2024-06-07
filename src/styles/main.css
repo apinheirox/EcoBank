@@ -112,7 +112,12 @@ header button{
     top: 15%;
     left: 60%;
 }
-
+#celular{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
 #celular .container{
     width: 1000px;
     margin: 0 auto;
@@ -123,7 +128,7 @@ header button{
 }
 
 #celular .container-esq img {
-    max-width: 460px;
+    max-width: 500px;
     margin-top: 50px;
     left: -20%;
     position: relative;
@@ -133,14 +138,22 @@ header button{
 #celular .simbolo {
     position: absolute;
     z-index: 0;
-    width: 580px;
-    top: 110%;
-    left: -10%;
+    width: 650px;
+    top: 104%;
+    left: -6%;
 }
-
+#celular .container-esq{
+    margin: 0 auto;
+    align-items: center;
+}
+#celular .container-dir{
+    margin: 0 auto;
+    align-items: center;
+}
 #celular .container-dir h1{
     color: #0C4B54;
     font-size: 45px;
+    margin-bottom: 10px;
 }
 #celular .container-dir p{
     color: #0C4B54;
@@ -159,7 +172,7 @@ header button{
     color: #0C4B54;
 }
 #celular .cards p{
-    font-size: 18px;
+    font-size: 17px;
     color: #0C4B54;
 }
 #celular .card-1{
@@ -181,4 +194,66 @@ header button{
     align-items: left;
     padding: 15px;
     border-radius: 15px;
+}
+
+#about{
+    position: relative;
+    padding: 100px 0;
+    background-color: #0C4B54;
+}
+#about .container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#about .text{
+    display: flex;
+    align-items: left;
+    width: 400px;
+    justify-content: left;
+    margin: 0 169px;
+}
+#about h1{
+    color: #ffffff;
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#about span{
+    color: #E9F549;
+}
+#about .cards{
+    margin-top: 50px;
+}
+#about .cards .card-top{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #E9F549;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    color: #0C4B54;
+    font-size: 18px;
+    font-weight: 600;
+    margin: -20px auto;
+}
+#about .cards .card{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    color: #0C4B54;
+    font-size: 19px;
+    font-weight: 600;
 }
