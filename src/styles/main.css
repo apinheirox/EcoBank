@@ -259,7 +259,57 @@ header button{
     font-size: 19px;
     font-weight: 600;
 }
-
+#recomend{
+    margin-top: 100px;
+}
+#recomend .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+#recomend .text{
+    display: flex;
+    align-items: left;
+    width: 450px;
+    justify-content: left;
+    margin: 0 169px;
+}
+#recomend h1{
+    color: #0C4B54;
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#recomend .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#recomend .cards .card{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    align-items: left;
+    background-color: #E9F549;
+    padding: 30px;
+    width: 300px;
+    height: 270px;
+    border-radius: 20px;
+    color: #0C4B54;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#recomend .cards .card img{
+    width: 80px;
+}
+#recomend h3{
+    margin-top: 10px;
+}
 @media (max-width: 1200px) {
     #home .container {
         width: 90%;
@@ -268,6 +318,9 @@ header button{
         width: 90%;
     }
     #about .container {
+        width: 90%;
+    }
+    #recomend .container {
         width: 90%;
     }
 }
@@ -369,6 +422,31 @@ header button{
         padding: 20px;
         font-size: 17px;
     }
+    #recomend .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recomend .text {
+        width: 80%;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    #recomend h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #recomend .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recomend .cards .card {
+        width: 80%;
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -393,7 +471,7 @@ header button{
 
     #home .simbolo {
         width: 400px;
-        top: 55%;
+        top: 45%;
         left: 45%;
     }
     #celular .container-dir{
@@ -474,13 +552,32 @@ header button{
         padding: 15px;
         font-size: 16px;
     }
+    #recomend .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #recomend .text {
+        width: 90%;
+    }
+
+    #recomend h1 {
+        font-size: 28px;
+    }
+
+    #recomend .cards .card {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 576px) {
     #home .container-esq h1 {
         font-size: 28px;
     }
-
+    #home .container-esq{
+        margin-top: 100px;
+    }
     #home .container-esq p {
         font-size: 12px;
     }
@@ -495,11 +592,12 @@ header button{
     #home .container-dir .home-img {
         max-width: 300px;
         margin: 0 auto;
+        margin-top: -120px;
     }
 
     #home .simbolo {
         width: 350px;
-        top: 50%;
+        top: 68%;
         left: 60%;
     }
     #celular .container-esq img {
@@ -564,5 +662,21 @@ header button{
         width: 100%;
         padding: 10px;
         font-size: 14px;
+    }
+    #recomend h1 {
+        font-size: 24px;
+    }
+
+    #recomend .text {
+        width: 100%;
+        margin: 0 10px;
+    }
+    #recomend .cards{
+        gap: 10px;
+    }
+    #recomend .cards .card {
+        width: 90%;
+        padding: 20px;
+        font-size: 16px;
     }
 }
