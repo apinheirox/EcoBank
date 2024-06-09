@@ -5,8 +5,9 @@
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
 }
-body, html{
+body{
     overflow-x: hidden;
+    background-color: #ffffff;
 }
 header {
     background-color: #0C4B54;
@@ -290,6 +291,7 @@ header .menu {
 }
 #recomend{
     margin-top: 100px;
+    background-color: #ffffff;
 }
 #recomend .container{
     display: flex;
@@ -341,6 +343,9 @@ header .menu {
 }
 #cart{
     margin-top: 170px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 0;
 }
 #cart .container{
     width: 1050px;
@@ -718,7 +723,7 @@ header .menu {
         max-width: 300px;
     }
     #cart {
-        margin-top: 120px;
+        margin-top: 10px;
     }
 
     #cart .container-esq img {
@@ -770,6 +775,9 @@ header .menu {
         width: 350px;
         top: 68%;
         left: 60%;
+    }
+    #celular{
+        margin-bottom: 100px;
     }
     #celular .container-esq img {
         max-width: 300px;
@@ -839,8 +847,8 @@ header .menu {
     }
 
     #recomend .text {
-        width: 100%;
-        margin: 0 10px;
+        width: 90%;
+        margin: 0 auto;
     }
     #recomend .cards{
         gap: 10px;
@@ -851,9 +859,8 @@ header .menu {
         font-size: 16px;
     }
     #cart {
-        margin-top: 100px;
+        margin-top: 80px;
     }
-
     #cart .container-esq img {
         max-width: 300px;
     }
