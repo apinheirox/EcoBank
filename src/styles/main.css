@@ -753,7 +753,7 @@ header .menu {
         overflow-x: hidden;
     }
     #home .container-esq h1 {
-        font-size: 32px;
+        font-size: 34px;
     }
     #home .container-esq{
         margin-top: 100px;
@@ -892,6 +892,6 @@ header .menu {
         padding: 0 0px;
     }
     header img{
-        width: 150px;
+        width: 130px;
     }
 }
