@@ -771,14 +771,14 @@ header .menu {
 
     #home .container-dir .home-img {
         max-width: 300px;
-        margin: 0 auto;
-        margin-top: -120px;
+        margin: -5px auto;
+        margin-top: -150px;
     }
 
     #home .simbolo {
         width: 350px;
         top: 68%;
-        left: 60%;
+        left: 0%;
     }
     #celular{
         margin-bottom: 100px;
@@ -881,7 +881,7 @@ header .menu {
     }
 
     #cart .simbolo {
-        width: 500px;
+        width: 345px;
         height: 190px;
     }
     header button{
