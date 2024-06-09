@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
 }
-body{
+body, html{
     overflow-x: hidden;
 }
 header {
@@ -392,6 +392,10 @@ header .menu {
     #recomend .container {
         width: 90%;
     }
+    #cart .container {
+        width: 90%;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -562,6 +566,32 @@ header .menu {
     header .hamburger.active div:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+    #cart .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #cart .container-esq img {
+        max-width: 400px;
+    }
+
+    #cart .container-dir h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #cart .container-dir button {
+        width: 100px;
+        height: 35px;
+    }
+
+    #cart .simbolo {
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 768px) {
@@ -687,6 +717,26 @@ header .menu {
         width: 100%;
         max-width: 300px;
     }
+    #cart {
+        margin-top: 120px;
+    }
+
+    #cart .container-esq img {
+        max-width: 350px;
+    }
+
+    #cart .container-dir h1 {
+        font-size: 30px;
+    }
+
+    #cart .container-dir button {
+        width: 90px;
+        height: 35px;
+    }
+
+    #cart .simbolo {
+        width: 400px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -799,5 +849,28 @@ header .menu {
         width: 90%;
         padding: 20px;
         font-size: 16px;
+    }
+    #cart {
+        margin-top: 100px;
+    }
+
+    #cart .container-esq img {
+        max-width: 300px;
+    }
+
+    #cart .container-dir h1 {
+        font-size: 25px;
+    }
+    #cart .container-dir{
+        text-align: center;
+    }
+    #cart .container-dir button {
+        width: 100px;
+        height: 30px;
+    }
+
+    #cart .simbolo {
+        width: 500px;
+        height: 190px;
     }
 }
