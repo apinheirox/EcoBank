@@ -12,8 +12,8 @@
 <body>
     <header>
         <div class="container">
-            <img src="./images/EcoBank-logo.png" alt="">
-            <nav>
+            <img src="./images/EcoBank-logo.png" alt="Logo">
+            <nav class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -21,9 +21,14 @@
                     <li><a href="#">Faq</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="buttons">
                 <button>Log in</button>
                 <button>Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </header>
@@ -120,5 +125,25 @@
             </div>
         </div>
     </section>
+    <section id="cart">
+        <div class="container">
+            <div class="container-esq">
+                <img src="" alt="">
+            </div>
+            <div class="container-dir">
+                <h1>Facilitando suas Transações, Protegendo seu Futuro.</h1>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
