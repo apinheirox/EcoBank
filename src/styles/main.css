@@ -59,6 +59,10 @@ header button {
     color: #ffffff;
     font-weight: 600;
 }
+header .buttons{
+    display: flex;
+    gap: 12px;
+}
 header .hamburger {
     display: none;
     flex-direction: column;
@@ -111,13 +115,17 @@ header .menu {
 }
 #home .container-esq button{
     background-color: #E9F549;
-    width: 100px;
+    width: 120px;
     height: 40px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
     color: #0C4B54;
     font-weight: 600;
+}
+#home .botoes{
+    display: flex;
+    gap: 12px;
 }
 #home .container-dir .home-img {
     max-width: 460px;
@@ -331,7 +339,47 @@ header .menu {
 #recomend h3{
     margin-top: 10px;
 }
+#cart{
+    margin-top: 170px;
+}
+#cart .container{
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+#cart .container-esq img{
+    max-width: 450px;
+}
+#cart .container-dir h1{
+    color: #0C4B54;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+#cart .container-dir button{
+    background-color: #E9F549;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: #0C4B54;
+    font-weight: 600;
+}
+#cart .simbolo {
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    margin-top: -10px;
+    left: 0%;
+}
 @media (max-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
     #home .container {
         width: 90%;
     }
@@ -347,6 +395,9 @@ header .menu {
 }
 
 @media (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
     #home .container {
         flex-direction: column;
         justify-content: center;
@@ -514,6 +565,9 @@ header .menu {
 }
 
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     #home .container {
         width: 90%;
         padding: 0 25px;
@@ -636,6 +690,9 @@ header .menu {
 }
 
 @media (max-width: 576px) {
+    body{
+        overflow-x: hidden;
+    }
     #home .container-esq h1 {
         font-size: 28px;
     }
