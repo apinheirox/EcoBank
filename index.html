@@ -137,6 +137,37 @@
             </div>
         </div>
     </section>
+    <section id="faq">
+        <div class="text">
+            <h1>Perguntas Frequentes</h1>
+        </div>
+        <div class="container">
+                <div class="faq">
+                    <div class="faq-question">Como posso abrir uma conta?</div>
+                    <div class="faq-answer">Our return policy is 30 days with a full refund.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">Quais são as taxas?</div>
+                    <div class="faq-answer">You can track your order through the link provided in the confirmation email.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">Tem serviços de investimento?</div>
+                    <div class="faq-answer">Yes, we ship to over 200 countries worldwide.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">Como entrar em contato com o suporte</div>
+                    <div class="faq-answer">Yes, we ship to over 200 countries worldwide.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">Como contribuir para a sustentabilidade ambiental?</div>
+                    <div class="faq-answer">Yes, we ship to over 200 countries worldwide.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">Como proteger minhas informações financeiras?</div>
+                    <div class="faq-answer">Yes, we ship to over 200 countries worldwide.</div>
+                </div>
+        </div>
+    </section>
     <script>
         const hamburger = document.querySelector('.hamburger');
     const menu = document.querySelector('.menu');
@@ -145,6 +176,21 @@
         hamburger.classList.toggle('active');
         menu.classList.toggle('active');
     });
+    document.addEventListener('DOMContentLoaded', function() {
+    const faqs = document.querySelectorAll('.faq');
+
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+            const answer = faq.querySelector('.faq-answer');
+            if (faq.classList.contains('active')) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    });
+});
     </script>
 </body>
 </html>

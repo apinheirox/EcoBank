@@ -385,6 +385,51 @@ header .menu {
     margin-top: -10px;
     left: 0%;
 }
+#faq .container{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#faq{
+    margin-top: 100px;
+}
+
+#faq .faq-question {
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 1px solid #0c4a5479;
+    border-radius: 30px;
+    cursor: pointer;
+    max-width: 450px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#faq .faq-answer {
+    padding: 20px;
+    display: none;
+}
+#faq .text{
+    display: flex;
+    align-items: left;
+    width: 450px;
+    justify-content: left;
+    margin: 0 169px;
+}
+#faq h1{
+    color: #0C4B54;
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: left;
+}
 @media (max-width: 1200px) {
     body{
         overflow-x: hidden;
@@ -404,6 +449,10 @@ header .menu {
     #cart .container {
         width: 90%;
         gap: 30px;
+    }
+    #faq .container {
+        width: 90%;
+        gap: 15px;
     }
 }
 
@@ -601,6 +650,29 @@ header .menu {
         left: 50%;
         transform: translateX(-50%);
     }
+    #faq .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #faq .text {
+        width: 80%;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    #faq h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #faq .faq-question {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -745,6 +817,32 @@ header .menu {
 
     #cart .simbolo {
         width: 400px;
+    }
+    #faq {
+        margin-top: 80px;
+    }
+
+    #faq .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #faq .text {
+        width: 90%;
+    }
+
+    #faq h1 {
+        font-size: 28px;
+    }
+
+    #faq .faq-question {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #faq .faq-answer {
+        padding: 15px;
+        font-size: 14px;
     }
 }
 
@@ -893,5 +991,27 @@ header .menu {
     }
     header img{
         width: 130px;
+    }
+    #faq {
+        margin-top: 60px;
+    }
+
+    #faq .text {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    #faq h1 {
+        font-size: 24px;
+    }
+
+    #faq .faq-question {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #faq .faq-answer {
+        padding: 10px;
+        font-size: 12px;
     }
 }
