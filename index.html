@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <title>EcoBank</title>
@@ -35,7 +36,7 @@
     </header>
     <section id="home">
         <div class="container">
-            <div class="container-esq">
+            <div class="container-esq" data-aos="fade-up-right" data-aos-duration="1000">
                 <h1>Gerencie suas <span>Finanças</span>, sem Complicações.</h1>
                 <p>EcoBank: Seu parceiro bancário digital, oferecendo soluções inovadoras para uma vida financeira mais verde e próspera.</p>
                 <div class="botoes">
@@ -47,15 +48,15 @@
                 <img class="home-img" src="./images/Home-background.png" alt="">
             </div>
         </div>
-        <img class="simbolo" src="./images/Simbolo-1.png" alt="">
+        <img class="simbolo" src="./images/Simbolo-1.png" alt="" data-aos="fade-up-left" data-aos-duration="1000">
     </section>
     <section id="celular">
         <img class="simbolo" src="./images/Simbolo-2.png" alt="">
         <div class="container">
-            <div class="container-esq">
+            <div class="container-esq" data-aos="fade-up-right" data-aos-duration="1000">
                 <img src="./images/App.png" alt="">
             </div>
-            <div class="container-dir">
+            <div class="container-dir" data-aos="fade-up-left" data-aos-duration="1000">
                 <h1>Sustentabilidade em cada transação.</h1>
                 <p>Facilite sua vida financeira. EcoBank</p>
                 <div class="cards">
@@ -72,10 +73,10 @@
         </div>
     </section>
     <section id="about">
-        <div class="text">
+        <div class="text" data-aos="fade-up-right" data-aos-duration="1000">
             <h1>Facilite sua vida <span>Financeira.</span></h1>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <div class="cards">
                 <div class="card-top">
                     <h3>Inovação</h3>
@@ -103,11 +104,11 @@
         </div>
     </section>
     <section id="recomend">
-        <div class="text">
+        <div class="text" data-aos="fade-up-right" data-aos-duration="1000">
             <h1>O que os Nossos Clientes estão Dizendo.</h1>
         </div>
         <div class="container">
-            <div class="cards">
+            <div class="cards" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="card">
                     <img src="./images/recomend-1.png" alt="">
                     <h3>Jack Paker</h3>
@@ -128,21 +129,21 @@
     </section>
     <section id="cart">
         <div class="container">
-            <div class="container-esq">
+            <div class="container-esq" data-aos="fade-up-right" data-aos-duration="1000">
                 <img src="./images/Cartao.png" alt="">
                 </div>
             <img src="./images/Simbolo-4.png" alt="" class="simbolo">
-            <div class="container-dir">
+            <div class="container-dir" data-aos="fade-up-left" data-aos-duration="1000">
                 <h1>Facilitando suas Transações, Protegendo seu Futuro.</h1>
                 <button>Get Started</button>
             </div>
         </div>
     </section>
     <section id="faq">
-        <div class="text">
+        <div class="text" data-aos="fade-up-right" data-aos-duration="1000">
             <h1>Perguntas Frequentes.</h1>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="faq">
                     <div class="faq-question">Como posso abrir uma conta?</div>
                     <div class="faq-answer">Our return policy is 30 days with a full refund.</div>
@@ -185,7 +186,10 @@
             </div>
         <p>Desenvolvido por Antônio Pinheiro</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         const hamburger = document.querySelector('.hamburger');
         const menu = document.querySelector('.menu');
 
