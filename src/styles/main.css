@@ -63,6 +63,13 @@ header button {
     cursor: pointer;
     color: #ffffff;
     font-weight: 600;
+    transition: 0.9s ease all;
+}
+header button:hover{
+    background-color: #E9F549;
+    color: #0C4B54;
+    transition: 0.9s ease all;
+    border: 1px solid black;
 }
 header .buttons{
     display: flex;
@@ -117,7 +124,15 @@ header .menu {
     cursor: pointer;
     color: #ffffff;
     font-weight: 600;
+    transition: 0.9s ease all;
 }
+#home .container-esq button:last-child:hover{
+    background-color: #E9F549;
+    color: #0C4B54;
+    transition: 0.9s ease all;
+    border: 1px solid black;
+}
+
 #home .container-esq button{
     background-color: #E9F549;
     width: 120px;
