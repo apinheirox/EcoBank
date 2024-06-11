@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <title>EcoBank</title>
 </head>
 <body>
@@ -168,16 +169,32 @@
                 </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="container-esq">
+                <img src="./images/EcoBank-logo.png" alt="">
+            </div>
+            <div class="container-dir">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Card</a></li>
+                    <li><a href="#">Faq</a></li>
+                </ul>
+            </div>
+            </div>
+        <p>Desenvolvido por Antônio Pinheiro</p>
+    </footer>
     <script>
         const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
+        const menu = document.querySelector('.menu');
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
+    hamburger.classList.toggle('active');
         menu.classList.toggle('active');
-    });
+        });
     document.addEventListener('DOMContentLoaded', function() {
-    const faqs = document.querySelectorAll('.faq');
+        const faqs = document.querySelectorAll('.faq');
 
     faqs.forEach(faq => {
         faq.addEventListener('click', () => {
