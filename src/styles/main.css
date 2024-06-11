@@ -1057,6 +1057,7 @@ footer p{
         font-size: 25px;
     }
     #cart .container-dir{
+        width: 300px;
         text-align: center;
     }
     #cart .container-dir button {
@@ -1083,7 +1084,9 @@ footer p{
     }
 
     #faq .text {
-        width: 79%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
         margin: 0 auto;
     }
     #faq .container{
@@ -1103,19 +1106,24 @@ footer p{
         padding: 10px;
         font-size: 12px;
     }
+    footer ul{
+        flex-direction: column;
+    }
     footer ul a {
         font-size: 14px;
     }
-
+    footer img{
+        width: 130px;
+    }
     footer p {
         font-size: 12px;
     }
     footer .container{
-        gap: 10px;
+        gap: 25px;
     }
     footer{
         height: 250px;
-        gap: 20px;
+        gap: 10px;
         margin-top: 50px;
     }
 }
