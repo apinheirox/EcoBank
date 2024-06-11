@@ -1015,7 +1015,7 @@ footer p{
     }
 
     #about h1 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     #about .cards .card-top {
@@ -1031,7 +1031,7 @@ footer p{
         font-size: 14px;
     }
     #recomend h1 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     #recomend .text {
@@ -1057,7 +1057,7 @@ footer p{
         font-size: 25px;
     }
     #cart .container-dir{
-        width: 300px;
+        width: 350px;
         text-align: center;
     }
     #cart .container-dir button {
@@ -1093,7 +1093,7 @@ footer p{
         gap: 5px;
     }
     #faq h1 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     #faq .faq-question {
